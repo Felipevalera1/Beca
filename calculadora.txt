@@ -1,0 +1,16 @@
+class cauculadora:
+
+operacao = input("Digite a operacao (soma, subt, mult, divi): ")
+numero1 = input("Primeiro número: ")
+numero2 = input("Segundo número: ")
+
+if operacao == "soma":
+	resultado = int(numero1) + int(numero2)
+if operacao == "subt":
+	resultado = int(numero1) - int(numero2)
+if operacao == "mult":
+	resultado = int(numero1) * int(numero2)
+if operacao == "divi":
+	resultado = int(numero1) / int(numero2)
+    
+print("O resultado da operação é: " + str(resultado))
