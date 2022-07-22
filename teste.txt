@@ -1,1 +1,23 @@
-ghiftpaighapi
+import datetime
+from dateutil.relativedelta import relativedelta
+
+def get_last_months(meses):
+  lista_meses = []
+  data_atual = datetime.datetime.now()
+  for mes in range(1, meses+1):
+    mes_passado = data_atual - relativedelta(months=mes)
+    mes_passado = mes_passado.strftime('%Y%m%d')
+    lista_meses.append(mes_passado)
+  return lista_meses
+
+def get_days_of_months():
+  for anomes in lista_meses:
+    ano = anomes[0:4]
+    mes = anomes[4:6]
+    dia = anomes[6:8]
+    return None
+
+
+
+
+teste = get_last_months(36)
